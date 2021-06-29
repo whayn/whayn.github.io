@@ -113,28 +113,10 @@ li a:visited:hover {
   font-size: 18px;
 }
 
-.learn-more-button:hover {
-  background-color: #81ecec;
-  color: black;
-}
-
-.learn-more-button:active {
-  background-color: #2d3436;
-  color: white;
-}
-
-.about {
-  margin: 50px 20px 100px 20px
-}
 
 .projects {
   padding-bottom: 100px;
-  margin: 50px 0 50px 0
-}
-
-.col-projects {
-  columns: 3;
-  margin: 0 10px 0 10px;
+  margin: 50px 30px 50px 30px
 }
 
 .contact {
@@ -145,4 +127,8 @@ li a:visited:hover {
   .col-projects {
     columns: 1;
   }
+}
+
+.project {
+    margin: 50px 0 50px 0;
 }

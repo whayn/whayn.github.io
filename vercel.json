@@ -3,6 +3,7 @@
   "redirects": [
     { "source": "/discord", "destination": "https://discord.gg/aDq3T9wqHb" },
     { "source": "/github", "destination": "https://github.com/whayn" },
-    { "source": "/twitter", "destination": "https://twitter.com/Whayn6/" }
+    { "source": "/twitter", "destination": "https://twitter.com/Whayn6/" },
+    { "source": "/contact", "destination": "mailto:contact@whayn.tk" }
   ]
 }
