@@ -104,5 +104,11 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 300px 0 0 0;
+      flex-direction: column;
+      padding: 70px 0 0 0;
+  }
+
+  .numbers {
+    color: red;
+    font-size: 200px;
   }
