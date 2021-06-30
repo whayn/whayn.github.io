@@ -9,6 +9,7 @@
   <meta content="https://cdn.discordapp.com/avatars/817414850216984636/57636a95d5de241e432f709bd061d129.png?size=4096"
     property="og:image">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/index.css">
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,15 +42,15 @@
     https://codepen.io/petebarr/pen/GvKgvQ
     -->
     <div align="center">
-      <img src="/assets/loremipsum.png" width="25%" align="center" style="border-radius: 30%; padding-top: 10px">
+      <img id="index-home-image" width="25%" align="center" style="border-radius: 30%; padding-top: 10px">
     </div>
-    <h1 align="center">Lorem Ipsum</h1>
-    <h3 align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <h1 align="center">Whayn</h1>
+    <h3 align="center">Back-end developper, still learning.</h2>
   </section>
 
   <section class="about">
     <h2 align="center">About</h2>
-    <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl arcu, aliquet ac metus vel, pharetra congue mauris. Duis id mattis leo, ac fermentum sem. Donec vitae feugiat risus. Ut tincidunt lectus mauris, at maximus nisi tincidunt eu. Ut a mi placerat, pharetra quam ut, hendrerit dolor. Maecenas pretium fermentum elit ac egestas. Quisque tincidunt luctus enim at ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacus lectus, ultricies pretium interdum ac, luctus at dui. Duis eget vulputate lectus. Integer mi mauris, eleifend sagittis turpis in, fermentum cursus nunc. Curabitur sit amet nisi non metus consequat consequat.</p>
+    <p align="center">Hey ! I'm a small back-end developper who only knows three coding languages, Javascript, HTML/CSS, and Python. I enjoy learn and discover new things. I like to do Origami and I would rather code than play. I'm working on some realy cool <a href="/projects.html">projects</a></a></p>
     <br>
     <div align="center">
       <a href="/about.html">
@@ -135,6 +136,18 @@
         x.className = "topnav";
       }
     }
+
+    /* Acces to github informations */
+          
+    fetch(
+        "https://api.github.com/users/whayn"
+      )
+        .then(res => {
+        return res.json()
+      })
+      .then(json => {
+        document.getElementById("index-home-image").src = json.avatar_url
+      });
   </script>
 </body>
 
