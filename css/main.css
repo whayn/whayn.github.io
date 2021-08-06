@@ -3,6 +3,10 @@
     src: url("/assets/cream.otf")
 }
 
+a {
+  color: rgb(64, 108, 255)
+}
+
 html {
   scroll-behavior: smooth;
 }

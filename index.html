@@ -49,7 +49,7 @@
 
     <section class="about">
         <h2 align="center">About</h2>
-        <p align="center">Hey ! I'm a small back-end developper who only knows three coding languages, Javascript, HTML/CSS, and Python. I enjoy learn and discover new things. I like to do Origami and I would rather code than play. I'm working on some realy cool <a href="/projects.html">projects</a></a></p>
+        <p align="center">Hey ! I'm a small back-end developper who knows three coding languages, Javascript, HTML/CSS, Python and C# (not really well). I enjoy learn and discover new things. I like to do Origami and I would rather code than play. I'm working on some realy cool <a href="/projects.html">projects</a></a></p>
         <br>
         <div align="center">
             <a href="/about.html">
@@ -61,8 +61,9 @@
     <section class="projects">
         <h2 align="center">Projects</h2>
         <div class="col-projects" align="center">
-            <img src="/assets/loremipsum.png" width="50%" align="center" style="border-radius: 20%; padding-top: 10px">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl arcu, aliquet ac metus vel, pharetra congue mauris</p>
+            <img src="/assets/Nexion.png" width="50%" align="center" style="border-radius: 20%; padding-top: 10px">
+            <h3>Nexion</h3>
+            <p>You want only 1 bot for your discord server? This is the one to get. Our goal is to replace all the bots, with this one.</p>
             <img src="/assets/loremipsum.png" width="50%" align="center" style="border-radius: 20%; padding-top: 10px">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl arcu, aliquet ac metus vel, pharetra congue mauris</p>
             <img src="/assets/loremipsum.png" width="50%" align="center" style="border-radius: 20%; padding-top: 10px">
@@ -79,7 +80,7 @@
     <section class="contact" id="contact" align="center" style="padding: 10px;">
         <h2 align="center">Contact</h2>
         <div align="center">
-            <img src="/assets/loremipsum.png" width="10%" align="center" style="border-radius: 60px; padding-top: 10px">
+            <img id="index-contact-image" width="10%" align="center" style="border-radius: 30%; padding-top: 10px">
         </div>
         <nav id="links-container">
             <ul>
@@ -130,6 +131,7 @@
             })
             .then(json => {
                 document.getElementById("index-home-image").src = json.avatar_url
+                document.getElementById("index-contact-image").src = json.avatar_url
             });
     </script>
 </body>
