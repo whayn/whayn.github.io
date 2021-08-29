@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/384925627d.js" crossorigin="anonymous"></script>
     <meta name="keywords" content="whayn, web developer, javascript developper" />
     <title>Whayn - Projects</title>
+    <link id="icon" rel="icon" type="image/png"/>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         </div>-->
         <h1 align="center">Projects</h1>
         <br>
-        <h3 align="center">Check on what I am and I was working on.</h2>
+        <h3 align="center">Discover what I was or still working on.</h2>
     </section>
 
     <section class="projects">
@@ -156,6 +157,7 @@
             })
             .then(json => {
                 document.getElementById("projects-contact-image").src = json.avatar_url
+                document.getElementById("icon").href = json.avatar_url
             });
     </script>
 </body>
