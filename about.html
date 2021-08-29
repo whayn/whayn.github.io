@@ -41,23 +41,30 @@
     https://codepen.io/ninivert/pen/ZpEQBR 
     https://codepen.io/petebarr/pen/GvKgvQ
     -->
+    <!-- 
         <div align="center">
             <img src="/assets/loremipsum.png" width="25%" align="center" style="border-radius: 30%; padding-top: 10px">
-        </div>
+        </div> 
+    -->
         <h1 align="center">ABOUT</h1>
-        <h3 align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <h3 align="center">Learn more about me.</h2>
     </section>
 
     <section class="about">
-        <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl arcu, aliquet ac metus vel, pharetra congue mauris. Duis id mattis leo, ac fermentum sem. Donec vitae feugiat risus. Ut tincidunt lectus mauris, at maximus nisi tincidunt eu. Ut a mi placerat, pharetra quam ut, hendrerit dolor. Maecenas pretium fermentum elit ac egestas. Quisque tincidunt luctus enim at ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacus lectus, ultricies pretium interdum ac, luctus at dui. Duis eget vulputate lectus. Integer mi mauris, eleifend sagittis turpis in, fermentum cursus nunc. Curabitur sit amet nisi non metus consequat consequat.</p>
+        <p align="center">Hey ! I'm a small back-end developper who knows three coding languages, Javascript, HTML/CSS, Python and C# (not really well). I enjoy learn and discover new things. I like to do Origami and I would rather code than play. I'm working on some realy cool <a href="/projects.html">projects</a></p>
         <br>
+        <div align="center">
+            <a href="/projects.html">
+                <button class="button" type="button" align="center">PROJECTS</button>
+            </a>
+        </div>
     </section>
 
 
     <section class="contact" id="contact" align="center" style="padding: 10px;">
         <h2 align="center">Contact</h2>
         <div align="center">
-            <img src="/assets/loremipsum.png" width="10%" align="center" style="border-radius: 60px; padding-top: 10px">
+            <img id="about-contact-image" width="150px" align="center" style="border-radius: 30%; padding-top: 10px">
         </div>
         <nav id="links-container">
             <ul>
@@ -97,6 +104,16 @@
                 x.className = "topnav";
             }
         }
+
+        fetch(
+                "https://api.github.com/users/whayn"
+            )
+            .then(res => {
+                return res.json()
+            })
+            .then(json => {
+                document.getElementById("about-contact-image").src = json.avatar_url
+            });
     </script>
 </body>
 

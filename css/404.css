@@ -1,14 +1,21 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 0 0;
+}
 
+.numbers {
+  color: red;
+  font-size: 200px;
+}
 
-  .not-found {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 70px 0 0 0;
-  }
+.text-not-found {
+  padding: 0 0 40px 0;
+}
 
-  .numbers {
-    color: red;
-    font-size: 200px;
-  }
+.col-404-buttons {
+  columns: 2;
+}
+

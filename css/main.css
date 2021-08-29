@@ -104,7 +104,7 @@ li a:visited:hover {
     padding-top: 52px;
 }
 
-.learn-more-button {
+.button {
     background-color: #2d3436;
     border: 3px solid #81ecec;  
     border-radius: 15px;
@@ -116,12 +116,13 @@ li a:visited:hover {
     font-size: 18px;
   }
   
-  .learn-more-button:hover {
+  .button:hover {
     background-color: #81ecec;
     color: black;
   }
   
-  .learn-more-button:active {
+  .button:active {
     background-color: #2d3436;
     color: white;
   }
+
